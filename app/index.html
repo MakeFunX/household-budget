@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="HomeBudget — a household budget site: add income and expenses, watch each category against its monthly limit, and keep the savings rate in sight.">
+<title>HomeBudget — Household Budget</title>
+<link rel="stylesheet" href="style.css">
+<script type="module" src="main.js"></script>
+</head>
+<body>
+<header class="top">
+  <a class="brand" href="#/">$ HomeBudget</a>
+  <nav class="nav" aria-label="Main navigation">
+    <a href="#/">Dashboard</a>
+    <a href="#/transactions">Transactions</a>
+    <a href="#/budgets">Budgets</a>
+    <a href="#/insights">Insights</a>
+    <a href="#/guide">Guide</a>
+  </nav>
+  <label class="month-picker">Month
+    <select id="month-select" aria-label="Choose month"></select>
+  </label>
+</header>
+<main id="app" aria-live="polite"></main>
+<footer class="foot">
+  <p>HomeBudget — a household budget site. Your data stays in this browser; nothing is sent anywhere.</p>
+  <p><a href="#/guide">How to run a budget that sticks</a> · <a href="#/insights">Insights</a></p>
+</footer>
+</body>
+</html>
